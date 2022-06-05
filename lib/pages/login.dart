@@ -12,7 +12,7 @@ class LoginPage extends StatelessWidget {
         children: [
           Image(
             image: AssetImage("assets/pattern.png"),
-            fit: BoxFit.fill,
+            fit: BoxFit.cover,
             width: 428.w,
             height: 926.h,
           ),
@@ -165,16 +165,17 @@ class LoginPage extends StatelessWidget {
                 ),
                 SizedBox(height: 30.h),
                 TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Forgot Your Password?",
-                      style: TextStyle(
-                        decoration: TextDecoration.underline,
-                        color: mainBlue,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 15.sp,
-                      ),
-                    )),
+                  child: Text(
+                    "Forgot Your Password?",
+                    style: TextStyle(
+                      decoration: TextDecoration.underline,
+                      color: mainBlue,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15.sp,
+                    ),
+                  ),
+                  onPressed: () {},
+                ),
                 SizedBox(height: 40.h),
                 Container(
                   decoration: BoxDecoration(
@@ -192,14 +193,15 @@ class LoginPage extends StatelessWidget {
                   width: 247.w,
                   height: 57.h,
                   child: Center(
-                      child: Text(
-                    "Login",
-                    style: TextStyle(
-                      color: mainWhite,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20.sp,
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                        color: mainWhite,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.sp,
+                      ),
                     ),
-                  )),
+                  ),
                 )
               ],
             ),
